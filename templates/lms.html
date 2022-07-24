@@ -1,0 +1,35 @@
+{% extends 'main.html' %}
+
+{%block title%}LMS{%endblock title%}
+
+{% block body  %}
+
+
+<p class="h1 text-success text-center my-2">The Courses We Are Proud To Offer!</p>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 m-2">
+    
+    <div class="col">
+      <div class="card h-100 bg-black">
+       <a href="#">
+        <img src="/static/images/lms1.png" class="card-img-top" alt="...">
+       </a>
+       <div class="card-body ">
+          <h5 class="card-title text-white text-center">Cisco Courses</h5>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card h-100 bg-black">
+       <a href="#">
+        <img src="/static/images/lms2.jpg" class="card-img-top" alt="...">
+       </a>
+       <hr style="color:white">
+        <div class="card-body">
+          <h5 class="card-title text-white text-center">Microsoft Courses</h5>
+        </div>
+      </div>
+    </div>
+</div>    
+{% endblock body %}

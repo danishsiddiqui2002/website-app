@@ -1,0 +1,60 @@
+{% load static %}
+ 
+{% block body  %}
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container-fluid">
+    
+    <a class="navbar-brand" href="/">
+      <img src="{%static 'images/Nano_logo.png'%}" width="200px" height="50px" >
+    </a>
+    
+    <div class="collapse navbar-collapse justify-content-center font-weight-bold" id="navbarNav">
+      
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white" aria-current="page" href="/" large><i class="fa fa-home text-success"></i>HOME</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/services"><i class="fa fa-cogs text-success"></i>SERVICES</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-images text-success"></i>LMS
+          </a>
+          <ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item text-success font-weight-bold" href="/lms">Live Training</a></li>
+            <li><a class="dropdown-item text-success font-weight-bold" href="https://academy.nanotechx.org/">Nanotechx Academy</a></li>
+          </ul>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/blog"><i class="fa fa-blog text-success"></i>BLOG</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/contact"><i class="fa fa-envelope text-success"></i>CONTACT</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/about"><i class="fa fa-file text-success"></i>ABOUT</a>
+        </li>
+      </ul>
+    </div>
+    
+    <a class="navbar-brand" href="/announcement">
+      <button type="button" class="btn btn-success">Announcement</button>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  </div>
+</nav>
+
+
+
+{% endblock body %}
